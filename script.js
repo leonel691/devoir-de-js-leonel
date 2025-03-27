@@ -1,14 +1,14 @@
 // exercice 1.1
-// let body=document.getElementById("body")
-// let ul=document.getElementById("list")
-// let list_element1=document.getElementById("element1")
-// let list_element2=document.getElementById("element2")
-// let list_element3=document.getElementById("element3")
-// let tableau_element=[list_element1,list_element2,list_element3]
-// for(let i=0; i<tableau_element.length;i++){
-//     tableau_element[i].innerText=i+1
-// }
-// console.log(tableau_element[i].innerHTML)
+let body=document.getElementById("body")
+let ul=document.getElementById("list")
+let list_element1=document.getElementById("element1")
+let list_element2=document.getElementById("element2")
+let list_element3=document.getElementById("element3")
+let tableau_element=[list_element1,list_element2,list_element3]
+for(let i=0; i<tableau_element.length;i++){
+    tableau_element[i].innerText=i+1
+}
+console.log(tableau_element[i].innerHTML)
 
 // exercice 1.2
 // let body=document.getElementById("body")
@@ -147,24 +147,75 @@
 // console.log(body.innerHTML)
 
 // // exercice 4.1
-let body = document.getElementById("body")
-let tableau=[['Nom', 'Age'], ['Alice', 25], ['Bob', 30]]
-let table=document.createElement("table")
-body.appendChild(table) 
-table.style.borderColor="red"
-table.style.borderWidth="2px"
-table.style.borderStyle="solid"
-for (i=0;i<tableau.length;i++){
-    let tr=document.createElement("tr")
-    table.appendChild(tr)
-    tr.innerText=tableau[i][0]
-    for (let j=0;j<tableau.length;j){
-        let td=document.createElement("td")
-        tr.appendChild(td)
-        td.innerText=tableau[j][1]
 
-    }
-}
-console.log(body.innerHTML)
+// let body = document.getElementById("body")
+// let tableau=[['Nom', 'Age'], ['Alice', 25], ['Bob', 30]]
+// let table=document.createElement("table")
+// body.appendChild(table) 
+// table.style.borderColor="red"
+// table.style.borderWidth="2px"
+// table.style.borderStyle="solid"
+// for (i=0;i<tableau.length;i++){
+//     let tr=document.createElement("tr")
+//     table.appendChild(tr)
+//     tr.innerText=tableau[i][0]
+//     for (let j=0;j<tableau.length;j){
+//         let td=document.createElement("td")
+//         tr.appendChild(td)
+//         td.innerText=tableau[j][1]
 
+//     }
+// }
+// console.log(body.innerHTML)
 
+// // exercice 4.2
+// let body=document.getElementById("body")
+// let table=document.getElementById("table")
+// for (let i=0;i<4;i++){
+//     let td=document.createElement("td")
+//     table.appendChild("td")
+//     td.innerText="simple text"
+// }
+// console.log(table.innerHTML)
+
+// // exercice 4.3
+// let body=document.getElementById("body")
+// let ul=document.getElementById("ul")
+// let ulchild=ul.children
+// let childTable=Array.from(ulchild)
+// console.log(childTable)
+// for (let i=0 ; i<childTable.length ; i++){
+//     if (childTable[i].innerText==="B"){
+//         childTable[i].style.fontWeight="bold"
+//         console.log("element",+(i+1))
+//     }
+// }
+
+// // exercice 4.4
+// let body=document.getElementById("body")
+// let table1=["Rouge", "Vert"]
+// let table2=["Bleu", "Jaune"] 
+// for (let i=0;i<table1.length;i++){
+//     table2.push(table1[i])
+// }
+// let ul=document.createElement("ul")
+// body.appendChild(ul)
+// console.log(table2)
+// for (let j=0;j<table2.length;j++){
+//     let li=createElement("li")
+//     ul.appendChild(li)
+//     li.innerText==table2[j]
+// }
+// console.log(body.innerHTML)
+
+// // exercice 4.5
+// let body=document.getElementById("body")
+// let tableObjet=[ {nom: "Alice",age: 25}, {nom: "Bob", age: 30}] 
+// let ul=document.createElement("ul")
+// body.appendChild(ul)
+// for (let i=0;i<tableObjet.length;i++){
+//     let li=document.createElement("li")
+//     ul.appendChild(li)
+//     li.innerText=tableObjet[i].nom+"("+tableObjet[i].age+"ans"+")"
+// }
+// console.log(ul.innerHTML)
